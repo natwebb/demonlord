@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Metal+Mania);
+@import url(http://fonts.googleapis.com/css?family=Metamorphous);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700);
+
+body {
+	background-color: #393845;
+}
+
+#wrapper {
+	width: 960px;
+	text-align: center;
+	margin: auto;
+	background-color: #9B96A3;
+}
+
+/*-----------------------------Header-----------------------------*/
+header {
+	text-align: center;
+	color: #940315;
+	padding: 5px 0px 10px 0px;
+}
+
+h1 {
+	font-family: 'Metal Mania', cursive;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: 'Metamorphous', cursive;
+	font-size: 20px;
+}
+
+/*-----------------------------Controls: Menus, etc.-----------------------------*/
+#controls {
+	float: left;
+	width: 160px;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*--------Theme Dropdowns--------*/
+.selector li {
+	height: 20px;
+	padding-top: 8px;
+	color: #010000;
+	font-family: 'Metamorphous', cursive;
+	font-size: 14px;
+	display: none;
+	background-color: #940315;
+}
+
+.selector .listTitle {
+	background-color: #5C0009;
+	color: #EEE;
+	font-size: 12px;
+	display: block;
+}
+
+.listTitle:hover {
+	color: #9B96A3;
+}
+
+.selector li:hover {
+	background-color: #5C0009;
+}
+
+.selector .header {
+	font-size: 12px;
+	color: #EEE;
+	height: auto;
+}
+
+.headerText{
+	height: 20px;
+}
+
+.smaller {
+	font-size: 12px;
+}
+
+/*--------Level Up and Down Buttons--------*/
+#levelers {
+	height: 20px;
+	padding-top: 8px;
+	color: #EEE;
+	font-family: 'Metamorphous', cursive;
+	font-size: 14px;
+	background-color: #5C0009;
+}
+
+#levelers div {
+	float: left;
+}
+
+#levelText {
+	padding-left: 33px;
+	padding-right: 22px;
+}
+
+#upArrow {
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	padding-left: 0px;
+	line-height: 10px;
+}
+
+#downArrow {
+	padding-left: 10px;
+}
+
+#upArrow:hover, #downArrow:hover {
+	color: #9B96A3;
+}
+
+/*-----------------------------Character Sheet-----------------------------*/
+#sheet {
+	float: left;
+	background-color: #EEE;
+	width: 790px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding: 5px;
+}
+
+.line {
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px dotted #9B96A3;
+}
+
+.line * {
+	float: left;
+}
+
+.boxLabel {
+	font-weight: 700;
+}
+
+.boxContents {
+	font-weight: 300;
+}

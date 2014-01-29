@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Shadow of the Demon Lord</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Shadow of the Demon Lord</h1>
+				<h2>Character Builder v0.4.0.3</h2>
+			</header>
+
+			<div id='controls'>
+				<ul id="originselect" class="selector">
+					<li id="originListTitle" class="listTitle">Origin Theme</li>
+					<li class="theme originTheme">Human</li>
+					<li class="theme originTheme">Cambion</li>
+					<li class="theme originTheme">Celestial</li>
+					<li class="theme originTheme">Created</li>
+					<li class="theme originTheme">Dryad</li>
+					<li class="theme originTheme">Dwarf</li>
+					<li class="theme originTheme">Elf</li>
+					<li class="theme originTheme">Firbolg</li>
+					<li class="theme originTheme">Gnome</li>
+					<li class="theme originTheme">Half-Elf</li>
+					<li class="theme originTheme">Half-Orc</li>
+					<li class="theme originTheme">Halfling</li>
+					<li class="theme originTheme">Revenant</li>
+					<li class="theme originTheme">Warg</li>
+				</ul>
+
+				<ul id="apprenticeselect" class="selector">
+					<li id="apprenticeListTitle" class="listTitle">Novice Theme</li>
+					<li class="theme apprenticeTheme">Barbarian</li>
+					<li class="theme apprenticeTheme">Mage</li>
+					<li class="theme apprenticeTheme">Monk</li>
+					<li class="theme apprenticeTheme">Priest</li>
+					<li class="theme apprenticeTheme">Rogue</li>
+					<li class="theme apprenticeTheme">Sorcerer</li>
+					<li class="theme apprenticeTheme">Warrior</li>
+				</ul>
+
+				<ul id="expertselect" class="selector">
+					<li id="expertListTitle" class="listTitle">Expert Theme</li>
+					<li class="theme expertTheme">Assassin</li>
+					<li class="theme expertTheme">Bard</li>
+					<li class="theme expertTheme">Berserker</li>
+					<li class="theme expertTheme">Cleric</li>
+					<li class="theme expertTheme">Cultist</li>
+					<li class="theme expertTheme">Diabolist</li>
+					<li class="theme expertTheme">Druid</li>
+					<li class="theme expertTheme">Engineer</li>
+					<li class="theme expertTheme">Fighter</li>
+					<li class="theme expertTheme">Gladiator</li>
+					<li class="theme expertTheme">Hunter</li>
+					<li class="theme expertTheme">Knight</li>
+					<li class="theme expertTheme">Martial Artist</li>
+					<li class="theme expertTheme">Paladin</li>
+					<li class="theme expertTheme">Psion</li>
+					<li class="theme expertTheme">Ranger</li>
+					<li class="theme expertTheme">Scout</li>
+					<li class="theme expertTheme">Shaman</li>
+					<li class="theme expertTheme">Slayer</li>
+					<li class="theme expertTheme">Thaumaturge</li>
+					<li class="theme expertTheme">Thief</li>
+					<li class="theme expertTheme">Witch</li>
+					<li class="theme expertTheme">Wizard</li>
+				</ul>
+
+				<ul id="masterselect" class="selector">
+					<li id="masterListTitle" class="listTitle">Master Theme</li>
+					<li class="theme masterTheme">Apostle</li>
+					<li class="theme masterTheme">Assassin</li>
+					<li class="theme masterTheme">Avenger</li>
+					<li class="theme masterTheme">Bard</li>
+					<li class="theme masterTheme">Blackguard</li>
+					<li class="theme masterTheme">Champion</li>
+					<li class="theme masterTheme">Cleric</li>
+					<li class="theme masterTheme">Crusader</li>
+					<li class="theme masterTheme">Demonologist</li>
+					<li class="theme masterTheme">Druid</li>
+					<li class="theme masterTheme">Engineer</li>
+					<li class="theme masterTheme">Exorcist</li>
+					<li class="theme masterTheme">Giant Slayer</li>
+					<li class="theme masterTheme">Gladiator</li>
+					<li class="theme masterTheme">Inquisitor</li>
+					<li class="theme masterTheme">Knight</li>
+					<li class="theme masterTheme">Mariner</li>
+					<li class="theme masterTheme">Master Thief</li>
+					<li class="theme masterTheme">Monk</li>
+					<li class="theme masterTheme">Mountebank</li>
+					<li class="theme masterTheme">Mystic</li>
+					<li class="theme masterTheme">Noble</li>
+					<li class="theme masterTheme">Paladin</li>
+					<li class="theme masterTheme">Psion</li>
+					<li class="theme masterTheme">Ranger</li>
+					<li class="theme masterTheme">Reaver</li>
+					<li class="theme masterTheme">Sage</li>
+					<li class="theme masterTheme">Savant</li>
+					<li class="theme masterTheme">Sentinel</li>
+					<li class="theme masterTheme">Shadow Dancer</li>
+					<li class="theme masterTheme">Shaman</li>
+					<li class="theme masterTheme">Swashbuckler</li>
+					<li class="theme masterTheme">Templar</li>
+					<li class="theme masterTheme">Warden</li>
+					<li class="theme masterTheme">Warlock</li>
+					<li class="theme masterTheme">Warlord</li>
+					<li class="theme masterTheme">Weapon Master</li>
+					<li class="theme masterTheme">Witch</li>
+					<li class="theme masterTheme">Witch Hunter</li>
+					<li class="theme masterTheme">Wizard</li>
+				</ul>
+
+				<div id="levelers">
+					<div id="levelText">Level</div>
+					<div id="upArrow">V</div>
+					<div id="downArrow">V</div>
+				</div>
+			</div>
+
+			<div id="sheet">
+				<div id="line1" class="line">
+					<div id="nameBox">
+						<div class="boxLabel">Name:</div>
+						<input type="text" placeholder="Character Name">
+					</div>
+					<div id="levelBox">
+						<div class="boxLabel">Level:</div>
+						<div id="levelCount" class="boxContents">0</div>
+					</div>
+					<div id="originBox">
+						<div class="boxLabel">Origin Theme:</div>
+						<div id="origin" class="boxContents"></div>					
+					</div>
+				</div>
+				<div id="line2" class="line">
+					<div id="apprenticeBox">
+						<div class="boxLabel">Novice Theme:</div>
+						<div id="apprentice" class="boxContents"></div>
+					</div>
+					<div id="expertBox">
+						<div class="boxLabel">Expert Theme:</div>
+						<div id="expert" class="boxContents"></div>
+					</div>
+					<div id="masterBox">
+						<div class="boxLabel">Master Theme:</div>
+						<div id="master" class="boxContents"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

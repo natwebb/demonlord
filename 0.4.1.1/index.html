@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Shadow of the Demon Lord</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Shadow of the Demon Lord</h1>
+				<h2>Character Builder v0.4.1.1</h2>
+			</header>
+
+			<div id='controls'>
+				<ul id="originselect" class="selector">
+					<li id="originListTitle" class="listTitle">Origin Theme</li>
+					<li class="theme originTheme">Human</li>
+					<li class="theme originTheme">Cambion</li>
+					<li class="theme originTheme">Celestial</li>
+					<li class="theme originTheme">Created</li>
+					<li class="theme originTheme">Dryad</li>
+					<li class="theme originTheme">Dwarf</li>
+					<li class="theme originTheme">Elf</li>
+					<li class="theme originTheme">Firbolg</li>
+					<li class="theme originTheme">Gnome</li>
+					<li class="theme originTheme">Half-Elf</li>
+					<li class="theme originTheme">Half-Orc</li>
+					<li class="theme originTheme">Halfling</li>
+					<li class="theme originTheme">Revenant</li>
+					<li class="theme originTheme">Warg</li>
+				</ul>
+
+				<ul id="apprenticeselect" class="selector">
+					<li id="apprenticeListTitle" class="listTitle">Novice Theme</li>
+					<li class="theme apprenticeTheme">Barbarian</li>
+					<li class="theme apprenticeTheme">Mage</li>
+					<li class="theme apprenticeTheme">Monk</li>
+					<li class="theme apprenticeTheme">Priest</li>
+					<li class="theme apprenticeTheme">Rogue</li>
+					<li class="theme apprenticeTheme">Sorcerer</li>
+					<li class="theme apprenticeTheme">Warrior</li>
+				</ul>
+
+				<ul id="expertselect" class="selector">
+					<li id="expertListTitle" class="listTitle">Expert Theme</li>
+					<li class="theme expertTheme">Assassin</li>
+					<li class="theme expertTheme">Bard</li>
+					<li class="theme expertTheme">Berserker</li>
+					<li class="theme expertTheme">Cleric</li>
+					<li class="theme expertTheme">Cultist</li>
+					<li class="theme expertTheme">Diabolist</li>
+					<li class="theme expertTheme">Druid</li>
+					<li class="theme expertTheme">Engineer</li>
+					<li class="theme expertTheme">Fighter</li>
+					<li class="theme expertTheme">Knight</li>
+					<li class="theme expertTheme">Martial Artist</li>
+					<li class="theme expertTheme">Paladin</li>
+					<li class="theme expertTheme">Psion</li>
+					<li class="theme expertTheme">Ranger</li>
+					<li class="theme expertTheme">Scout</li>
+					<li class="theme expertTheme">Shaman</li>
+					<li class="theme expertTheme">Thaumaturge</li>
+					<li class="theme expertTheme">Thief</li>
+					<li class="theme expertTheme">Witch</li>
+					<li class="theme expertTheme">Wizard</li>
+				</ul>
+
+				<ul id="masterselect" class="selector">
+					<li id="masterListTitle" class="listTitle">Master Theme</li>
+					<li class="header masterHeader">
+						<div class="headerText">Assassin Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Executioner</li>
+							<li class="theme masterTheme">Poisoner</li>
+							<li class="theme masterTheme">Shadow Walker</li>
+							<li class="theme masterTheme">Torturer</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Bard Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Beguiler</li>
+							<li class="theme masterTheme">Master Bard</li>
+							<li class="theme masterTheme">Skald</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Berserker Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Destroyer</li>
+							<li class="theme masterTheme">Ghost Speaker</li>
+							<li class="theme masterTheme">Slayer</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Cleric Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Crusader</li>
+							<li class="theme masterTheme">Exorcist</li>
+							<li class="theme masterTheme">Healer</li>
+							<li class="theme masterTheme">Invoker</li>
+							<li class="theme masterTheme">Light Binder</li>
+							<li class="theme masterTheme">Templar</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Cultist Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Demonologist</li>
+							<li class="theme masterTheme">Flagellant</li>
+							<li class="theme masterTheme">Oracle</li>
+							<li class="theme masterTheme"><span class="smaller">Voice of the Elder God</span></li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Diabolist Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Infernal</li>
+							<li class="theme masterTheme">Occultist</li>
+							<li class="theme masterTheme">Warlock</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Druid Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Archdruid</li>
+							<li class="theme masterTheme">Elementalist</li>
+							<li class="theme masterTheme">Shapeshifter</li>
+							<li class="theme masterTheme">Warden</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Engineer Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Alchemist</li>
+							<li class="theme masterTheme">Artificer</li>
+							<li class="theme masterTheme">Gunslinger</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Fighter Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Dervish</li>
+							<li class="theme masterTheme">Duelist</li>
+							<li class="theme masterTheme">Gladiator</li>
+							<li class="theme masterTheme">Guardian</li>
+							<li class="theme masterTheme">Sharpshooter</li>
+							<li class="theme masterTheme">Spellblade</li>
+							<li class="theme masterTheme">Swashbuckler</li>
+							<li class="theme masterTheme">Vanguard</li>
+							<li class="theme masterTheme">Weapon Specialist</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Knight Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Blackguard</li>
+							<li class="theme masterTheme">Champion</li>
+							<li class="theme masterTheme">Commander</li>
+							<li class="theme masterTheme">Noble</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Martial Artist Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Brawler</li>
+							<li class="theme masterTheme">Enlighted One</li>
+							<li class="theme masterTheme">Wrestler</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Paladin Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Avenger</li>
+							<li class="theme masterTheme">Defender</li>
+							<li class="theme masterTheme">Inquisitor</li>
+							<li class="theme masterTheme">Witch Hunter</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Psion Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Namer</li>
+							<li class="theme masterTheme">Telekinetic</li>
+							<li class="theme masterTheme">Telepath</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Ranger Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Beastmaster</li>
+							<li class="theme masterTheme">Hunter</li>
+							<li class="theme masterTheme">Giant Slayer</li>
+							<li class="theme masterTheme">Reaver</li>
+							<li class="theme masterTheme">Seeker</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Scout Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Explorer</li>
+							<li class="theme masterTheme">Infiltrator</li>
+							<li class="theme masterTheme">Mariner</li>
+							<li class="theme masterTheme">Sniper</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Shaman Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Dreamer</li>
+							<li class="theme masterTheme">Totem</li>
+							<li class="theme masterTheme">Traveler</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Thaumaturge Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Chronomancer</li>
+							<li class="theme masterTheme">Dragon Adept</li>
+							<li class="theme masterTheme">Pandemoniac</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Thief Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Acrobat</li>
+							<li class="theme masterTheme">Blade</li>
+							<li class="theme masterTheme">Charlatan</li>
+							<li class="theme masterTheme">Malefactor</li>
+							<li class="theme masterTheme">Mountebank</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Witch Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Conjurer</li>
+							<li class="theme masterTheme">Diviner</li>
+							<li class="theme masterTheme">Enchanter</li>
+							<li class="theme masterTheme">Necromancer</li>
+							<li class="theme masterTheme">Shadow Weaver</li>
+						</ul>
+					</li>
+					<li class="header masterHeader">
+						<div class="headerText">Wizard Themes</div>
+						<ul class="popOutList">
+							<li class="theme masterTheme">Abjurer</li>
+							<li class="theme masterTheme">Arcanist</li>
+							<li class="theme masterTheme">Evoker</li>
+							<li class="theme masterTheme">Illusionist</li>
+							<li class="theme masterTheme">Magus</li>
+							<li class="theme masterTheme">Spellbinder</li>
+							<li class="theme masterTheme">Transmuter</li>
+						</ul>
+					</li>
+				</ul>
+
+				<div id="levelers">
+					<div id="levelText">Level</div>
+					<div id="upArrow">V</div>
+					<div id="downArrow">V</div>
+				</div>
+			</div>
+
+			<div id="sheet">
+				<div id="line1" class="line">
+					<div id="nameBox" class="box3">
+						<div class="boxLabel">Name:</div>
+						<input type="text" placeholder="Character Name">
+					</div>
+					<div id="levelBox" class="box3">
+						<div class="boxLabel">Level:</div>
+						<div id="levelCount" class="boxContents">0</div>
+					</div>
+					<div id="originBox" class="box3">
+						<div class="boxLabel">Origin Theme:</div>
+						<div id="origin" class="boxContents"></div>					
+					</div>
+				</div>
+
+				<div id="line5" class="line">
+					<div id="fightingBox" class="box4">
+						<div class="boxLabel">Size:</div>
+						<div id="fighting" class="boxContents"></div>
+					</div>
+					<div id="magicBox" class="box4">
+						<div class="boxLabel">Vision:</div>
+						<div id="magic" class="boxContents"></div>
+					</div>
+					<div id="healthBox" class="box2">
+						<div class="boxLabel">Languages:</div>
+						<div id="health" class="boxContents"></div>
+					</div>
+				</div>
+
+				<div id="line2" class="line">
+					<div id="apprenticeBox" class="box3">
+						<div class="boxLabel">Novice Theme:</div>
+						<div id="apprentice" class="boxContents"></div>
+					</div>
+					<div id="expertBox" class="box3">
+						<div class="boxLabel">Expert Theme:</div>
+						<div id="expert" class="boxContents"></div>
+					</div>
+					<div id="masterBox" class="box3">
+						<div class="boxLabel">Master Theme:</div>
+						<div id="master" class="boxContents"></div>
+					</div>
+				</div>
+
+				<div id="line3" class="line">
+					<div id="strengthBox" class="box4">
+						<div class="boxLabel">Strength:</div>
+						<div id="strength" class="boxContents"></div>
+					</div>
+					<div id="dexterityBox" class="box4">
+						<div class="boxLabel">Dexterity:</div>
+						<div id="dexterity" class="boxContents"></div>
+					</div>
+					<div id="intelligenceBox" class="box4">
+						<div class="boxLabel">Intelligence:</div>
+						<div id="intelligence" class="boxContents"></div>
+					</div>
+					<div id="charismaBox" class="box4">
+						<div class="boxLabel">Charisma:</div>
+						<div id="charisma" class="boxContents"></div>
+					</div>
+				</div>
+
+				<div id="line4" class="line">
+					<div id="fightingBox" class="box4">
+						<div class="boxLabel">Fighting:</div>
+						<div id="fighting" class="boxContents"></div>
+					</div>
+					<div id="magicBox" class="box4">
+						<div class="boxLabel">Magic:</div>
+						<div id="magic" class="boxContents"></div>
+					</div>
+					<div id="healthBox" class="box4">
+						<div class="boxLabel">Health:</div>
+						<div id="health" class="boxContents"></div>
+					</div>
+					<div id="sanityBox" class="box4">
+						<div class="boxLabel">Sanity:</div>
+						<div id="sanity" class="boxContents"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

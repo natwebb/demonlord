@@ -9,8 +9,11 @@ function initialize(){
 }
 
 function toggleThemeList(){
-	if ($(this).siblings().css('display')==='none')
+	if ($(this).siblings().css('display')==='none'){
+		$('#controls').find('.theme').hide();
+		$('#controls').find('.header').hide();
 		$(this).siblings().css('display', 'block');
+	}
 	else{
 		$(this).siblings().hide();
 	}
@@ -37,9 +40,11 @@ function changeTheme(){
 function toggleSubthemeList(){
 	if ($(this).siblings().find('li').css('display')==='none'){
 		$(this).parent().siblings().find('li').hide();
+		$(this).siblings().addClass('dropShadow');
 		$(this).siblings().find('li').css('display', 'block');
 	}
 	else{
+		$(this).siblings().removeClass('dropShadow');
 		$(this).siblings().find('li').hide();
 	}	
 }
